@@ -1,3 +1,8 @@
+Sure — and a small correction for future use: **“From now on, we will use only English. You can correct me if I make a mistake.”**
+
+Below is a ready-to-save draft for **`00-governance/001-template-foundation.md`**.
+
+````md
 # 001 — Template Foundation
 
 ## Document Control
@@ -40,8 +45,8 @@ The objective of this repository is to provide a reusable, adaptable, and certif
 - products developed with controlled use of AI.
 
 The repository is designed as **EU-first, FDA-ready**:
-- **EU-first** means that the baseline structure is aligned primarily to European medical device documentation needs under MDR/IVDR-oriented software projects. MDR establishes the framework for placing medical devices on the EU market, including conformity assessment and post-market obligations. [1](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng)[2](https://eur-lex.europa.eu/legal-content/EN/LSU/?uri=CELEX%3A32017R0745)
-- **FDA-ready** means that the structure should be extensible so that software documentation and cybersecurity documentation can be augmented for U.S. submissions when needed. FDA provides dedicated guidance for device software functions and separate cybersecurity premarket documentation expectations. [3](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/content-premarket-submissions-device-software-functions)[4](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket)
+- **EU-first** means that the baseline structure is aligned primarily to European medical device documentation needs under MDR/IVDR-oriented software projects. MDR establishes the framework for placing medical devices on the EU market, including conformity assessment and post-market obligations. 
+- **FDA-ready** means that the structure should be extensible so that software documentation and cybersecurity documentation can be augmented for U.S. submissions when needed. FDA provides dedicated guidance for device software functions and separate cybersecurity premarket documentation expectations. 
 
 ---
 
@@ -50,13 +55,13 @@ The repository is designed as **EU-first, FDA-ready**:
 ### 3.1 In Scope
 
 This template framework supports documentation for systems such as:
-- **Medical Device Software (MDSW)** and software functions that may qualify as medical devices depending on intended purpose. Qualification and classification of software depend strongly on the manufacturer-defined intended purpose. [5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)[1](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng)
-- **Software operating on general computing platforms**, including desktop, mobile, cloud, and other platforms. MDCG guidance explicitly covers apps and software operating on mobile phones, in the cloud, or on other platforms. [5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
-- **Health software products** placed on the market without dedicated hardware, including lifecycle concerns such as design, validation, installation, maintenance, and disposal. IEC 82304-1 addresses health software on general computing platforms across the full lifecycle. [6](https://www.iso.org/standard/59543.html)
-- **Software cooperating with devices**, including software that drives or influences the use of a device, software accessories, and software interacting with external sensors, instruments, or connected systems. MDCG guidance explicitly addresses software driving or influencing the use of a device and software accessories. [5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
-- **Remote, connected, and telemedicine-related systems**, including communication systems and home-care or remote monitoring scenarios. MDCG guidance includes telemedicine systems and home-care monitoring examples. [5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
-- **Cybersecurity-relevant medical software**, especially where communication, remote access, interoperable interfaces, or field updates are present. FDA’s cybersecurity guidance and FDA recognition of IEC 81001-5-1 confirm that secure lifecycle activities are relevant for medical software products. [4](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket)[7](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfStandards/detail.cfm?standard__identification_no=43889)
-- **AI-related systems**, including systems that contain AI components or are subject to AI-specific obligations in addition to sectoral medical device requirements. The EU AI Act establishes harmonized rules for AI systems, including high-risk use contexts, and is intended to complement existing sectoral regulation. [8](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng)
+- **Medical Device Software (MDSW)** and software functions that may qualify as medical devices depending on intended purpose. Qualification and classification of software depend strongly on the manufacturer-defined intended purpose. 
+- **Software operating on general computing platforms**, including desktop, mobile, cloud, and other platforms. MDCG guidance explicitly covers apps and software operating on mobile phones, in the cloud, or on other platforms. 
+- **Health software products** placed on the market without dedicated hardware, including lifecycle concerns such as design, validation, installation, maintenance, and disposal. IEC 82304-1 addresses health software on general computing platforms across the full lifecycle. 
+- **Software cooperating with devices**, including software that drives or influences the use of a device, software accessories, and software interacting with external sensors, instruments, or connected systems. MDCG guidance explicitly addresses software driving or influencing the use of a device and software accessories. 
+- **Remote, connected, and telemedicine-related systems**, including communication systems and home-care or remote monitoring scenarios. MDCG guidance includes telemedicine systems and home-care monitoring examples. 
+- **Cybersecurity-relevant medical software**, especially where communication, remote access, interoperable interfaces, or field updates are present. FDA’s cybersecurity guidance and FDA recognition of IEC 81001-5-1 confirm that secure lifecycle activities are relevant for medical software products. 
+- **AI-related systems**, including systems that contain AI components or are subject to AI-specific obligations in addition to sectoral medical device requirements. The EU AI Act establishes harmonized rules for AI systems, including high-risk use contexts, and is intended to complement existing sectoral regulation. 
 
 ### 3.2 Out of Scope
 
@@ -85,19 +90,19 @@ The repository shall follow these principles:
    All critical artifacts should be linkable across the lifecycle: intended purpose, claims, requirements, architecture, risks, controls, tests, evidence, release decisions, and post-market inputs.
 
 3. **Product Perspective**  
-   Documentation shall describe the **whole product lifecycle**, not only source code. IEC 82304-1 covers design, development, validation, installation, maintenance, and disposal of health software products. [6](https://www.iso.org/standard/59543.html)
+   Documentation shall describe the **whole product lifecycle**, not only source code. IEC 82304-1 covers design, development, validation, installation, maintenance, and disposal of health software products. 
 
 4. **Intended Purpose First**  
-   The intended purpose shall drive scope, qualification, classification, requirements, validation strategy, and claims. MDCG emphasizes that a clear intended purpose is essential for qualification, classification, and compliance of MDSW. [5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
+   The intended purpose shall drive scope, qualification, classification, requirements, validation strategy, and claims. MDCG emphasizes that a clear intended purpose is essential for qualification, classification, and compliance of MDSW. 
 
 5. **Platform-Neutral Qualification Logic**  
-   Software shall not be documented as non-medical or low-impact merely because it runs in cloud, on mobile, or on a general-purpose platform. MDCG explicitly notes that qualification depends on intended purpose regardless of location or platform. [5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
+   Software shall not be documented as non-medical or low-impact merely because it runs in cloud, on mobile, or on a general-purpose platform. MDCG explicitly notes that qualification depends on intended purpose regardless of location or platform. 
 
 6. **Security by Design**  
-   Cybersecurity shall be addressed from the beginning of the lifecycle, not as a late-stage annex. FDA’s current cybersecurity guidance expects design, labeling, and premarket documentation to address cybersecurity risk. [4](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket)
+   Cybersecurity shall be addressed from the beginning of the lifecycle, not as a late-stage annex. FDA’s current cybersecurity guidance expects design, labeling, and premarket documentation to address cybersecurity risk. 
 
 7. **AI as a Cross-Cutting Concern**  
-   AI-related functionality shall be documented through dedicated governance, validation, change control, and monitoring mechanisms where applicable. The EU AI Act introduces obligations that may coexist with medical device requirements. [8](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng)
+   AI-related functionality shall be documented through dedicated governance, validation, change control, and monitoring mechanisms where applicable. The EU AI Act introduces obligations that may coexist with medical device requirements. 
 
 8. **Localization as a Safety Concern**  
    Multilingual and regional differences shall be treated as controlled product behavior where they influence usability, interpretation, warnings, clinical content, or safe operation.
@@ -205,12 +210,12 @@ Records and logs may include:
 ## 7. Regulatory Orientation
 
 This repository is structured to remain compatible with documentation needs commonly associated with:
-- EU MDR/IVDR-oriented software projects, including software qualification/classification logic and conformity-related evidence expectations. MDR defines the EU medical device framework, and MDCG 2019-11 Rev.1 provides software-specific guidance for qualification and classification under MDR/IVDR. [1](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng)[5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
-- Health software product lifecycle expectations reflected in IEC 82304-1. IEC 82304-1 applies to health software products on general computing platforms and covers lifecycle activities from design through disposal. [6](https://www.iso.org/standard/59543.html)
-- FDA documentation expectations for device software functions. FDA’s 2023 guidance describes recommended documentation for premarket submissions involving device software functions. [3](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/content-premarket-submissions-device-software-functions)
-- FDA cybersecurity expectations for devices with cybersecurity risk. FDA’s February 2026 cybersecurity guidance addresses design, labeling, and recommended premarket cybersecurity documentation. [4](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket)
-- Secure lifecycle practices for health software, including IEC 81001-5-1. FDA recognizes IEC 81001-5-1 for health software and health IT security lifecycle activities, while also clarifying that additional FDA cybersecurity expectations may still apply. [7](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfStandards/detail.cfm?standard__identification_no=43889)
-- Additional AI-related obligations where AI functionality is in scope. The EU AI Act establishes harmonized AI rules and is intended to complement existing Union law, including sectoral product legislation. [8](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng)
+- EU MDR/IVDR-oriented software projects, including software qualification/classification logic and conformity-related evidence expectations. MDR defines the EU medical device framework, and MDCG 2019-11 Rev.1 provides software-specific guidance for qualification and classification under MDR/IVDR. 
+- Health software product lifecycle expectations reflected in IEC 82304-1. IEC 82304-1 applies to health software products on general computing platforms and covers lifecycle activities from design through disposal. 
+- FDA documentation expectations for device software functions. FDA’s 2023 guidance describes recommended documentation for premarket submissions involving device software functions. 
+- FDA cybersecurity expectations for devices with cybersecurity risk. FDA’s February 2026 cybersecurity guidance addresses design, labeling, and recommended premarket cybersecurity documentation. 
+- Secure lifecycle practices for health software, including IEC 81001-5-1. FDA recognizes IEC 81001-5-1 for health software and health IT security lifecycle activities, while also clarifying that additional FDA cybersecurity expectations may still apply. 
+- Additional AI-related obligations where AI functionality is in scope. The EU AI Act establishes harmonized AI rules and is intended to complement existing Union law, including sectoral product legislation. 
 
 This repository shall therefore be maintained so that project teams can:
 - start with a common baseline,
@@ -398,7 +403,7 @@ Projects using this template shall document device cooperation and communication
 - update and compatibility assumptions,
 - remote operation constraints.
 
-This is particularly important for connected, remote, and home-care scenarios, which are explicitly reflected in software guidance examples for telemedicine and home monitoring. [5](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
+This is particularly important for connected, remote, and home-care scenarios, which are explicitly reflected in software guidance examples for telemedicine and home monitoring. 
 
 ---
 
@@ -425,3 +430,63 @@ medical-device-documentation-template/
 ├── 14-traceability/
 ├── templates/
 └── README.md
+````
+
+This structure may evolve, but any change should preserve clarity, modularity, and traceability.
+
+***
+
+## 17. Definitions
+
+### 17.1 Intended Purpose
+
+The use for which a product is intended according to information supplied by the manufacturer. MDR and MDCG documentation make intended purpose central to qualification, classification, and compliance decisions. [\[eur-lex.europa.eu\]](https://eur-lex.europa.eu/eli/reg/2017/745/oj/eng), [\[health.ec.europa.eu\]](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
+
+### 17.2 Medical Device Software (MDSW)
+
+Software intended to be used, alone or in combination, for a medical purpose as defined under the medical device regulations. MDCG defines MDSW and clarifies qualification logic for software under MDR/IVDR. [\[health.ec.europa.eu\]](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
+
+### 17.3 Software Driving or Influencing a Device
+
+Software intended to drive or influence the use of a hardware medical device without necessarily having an independent medical purpose of its own. MDCG explicitly describes this category. [\[health.ec.europa.eu\]](https://health.ec.europa.eu/document/download/b45335c5-1679-4c71-a91c-fc7a4d37f12b_en?filename=mdcg_2019_11_en.pdf)
+
+### 17.4 Health Software Product
+
+A health software product designed to operate on general computing platforms and managed across the full product lifecycle. IEC 82304-1 uses this product-oriented perspective. [\[iso.org\]](https://www.iso.org/standard/59543.html)
+
+### 17.5 High-Risk AI Context
+
+An AI-related context that may trigger additional obligations under the EU AI Act when AI is used in regulated or safety-relevant domains. The AI Act establishes harmonized obligations for AI systems, including high-risk use cases. [\[eur-lex.europa.eu\]](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng)
+
+***
+
+## 18. Acceptance Criteria for This Foundation Document
+
+This document shall be considered acceptable when:
+
+* repository purpose is clearly defined,
+* supported product scope is described,
+* architecture of core vs add-on documents is established,
+* traceability policy is defined,
+* governance and versioning rules are defined,
+* English is defined as the canonical language,
+* AI, cybersecurity, connectivity, and localization are recognized as first-class concerns.
+
+***
+
+## 19. Next Documents
+
+The next recommended governance documents are:
+
+* `002-document-control-rules.md`
+* `003-template-authoring-rules.md`
+* `004-traceability-principles.md`
+* `005-regulatory-and-standards-matrix.md`
+
+***
+
+## 20. Revision History
+
+| Version | Date       | Summary               |
+| ------- | ---------- | --------------------- |
+| 0.1.0   | 2026-06-03 | Initial draft created |
